@@ -1,0 +1,19 @@
+#!/bin/sh
+
+#
+# {{ ansible_managed }}
+#
+
+exec tail -n +3 $0
+# This file provides an easy way to add custom menu entries.  Simply type the
+# menu entries you want to add after this comment.  Be careful not to change
+# the 'exec tail' line above.
+menuentry "Reboot the machine" {
+    echo "Rebooting the machine..."
+    reboot
+}
+
+menuentry "Shutdown the machine" {
+    echo "Shutting down..."
+    halt
+}
