@@ -3,6 +3,6 @@
 
 - name: 'regenerate grub2 config'
   command:
-    cmd: 'grub2-mkconfig -o /boot/grub2/grub.cfg'
+    cmd: "grub2-mkconfig -o {{ grub_cfg_path }}"
   when:
     - 'ansible_os_family != "openSUSE MicroOS"'
