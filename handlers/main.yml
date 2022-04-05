@@ -1,0 +1,8 @@
+---
+# grub2_add_reboot_and_shutdown_to_menu/handlers/main.yml
+
+- name: 'regenerate grub2 config'
+  command:
+    cmd: 'grub2-mkconfig -o /boot/grub2/grub.cfg'
+  when:
+    - 'ansible_os_family != "openSUSE MicroOS"'
