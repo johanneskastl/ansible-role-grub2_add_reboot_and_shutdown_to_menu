@@ -6,3 +6,12 @@
     cmd: "grub2-mkconfig -o {{ grub_cfg_path }}"
   when:
     - 'ansible_os_family != "openSUSE MicroOS"'
+
+- name: 'regenerate grub2 config on openSUSE MicroOS'
+  command:
+    cmd: '/usr/sbin/transactional-update grub.cfg'
+  notify:
+    - 'Reboot'
+    - 'Wait for the machine(s) to be ready again'
+  when:
+    - 'ansible_os_family == "openSUSE MicroOS"'
