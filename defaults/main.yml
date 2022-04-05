@@ -3,3 +3,4 @@
 
 grubd_directory: '/etc/grub.d'
 grub_script_filename: '85_Reboot_Shutdown'
+grub_cfg_path: '/boot/grub2/grub.cfg'
