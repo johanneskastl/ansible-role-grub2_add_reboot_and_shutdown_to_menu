@@ -1,0 +1,12 @@
+---
+# grub2_add_reboot_and_shutdown_to_menu/tasks/main.yml
+
+- name: 'create file /etc/grub.d/85_Reboot_Shutdown'
+  template:
+    src: '85_Reboot_Shutdown.j2'
+    dest: '/etc/grub.d/85_Reboot_Shutdown'
+    owner: 'root'
+    group: 'root'
+    mode: '0755'
+  notify:
+    - 'regenerate grub2 config'
