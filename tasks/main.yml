@@ -4,7 +4,7 @@
 - name: 'create file /etc/grub.d/85_Reboot_Shutdown'
   template:
     src: '85_Reboot_Shutdown.j2'
-    dest: '/etc/grub.d/85_Reboot_Shutdown'
+    dest: "{{ grubd_directory }}/{{ grub_script_filename }}"
     owner: 'root'
     group: 'root'
     mode: '0755'
