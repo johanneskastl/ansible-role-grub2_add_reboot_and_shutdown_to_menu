@@ -10,3 +10,4 @@
     mode: '0755'
   notify:
     - 'regenerate grub2 config'
+    - 'regenerate grub2 config on openSUSE MicroOS'
