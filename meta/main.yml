@@ -1,5 +1,6 @@
 galaxy_info:
   role_name: 'grub2_add_reboot_and_shutdown_to_menu'
+  namespace: 'johanneskastl'
   author: 'Johannes Kastl'
   description: 'Add options for shutdown and restart to the GRUB2 boot menu'
   company: 'B1 Systems GmbH'
