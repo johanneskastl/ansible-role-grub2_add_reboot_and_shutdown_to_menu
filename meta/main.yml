@@ -14,6 +14,7 @@ galaxy_info:
       versions:
         - 7
         - 8
+        - 9
     - name: Debian
       versions:
         - all
@@ -26,6 +27,7 @@ galaxy_info:
     - name: Rocky
       versions:
         - 8
+        - 9
     - name: SLES
       versions:
         - all
