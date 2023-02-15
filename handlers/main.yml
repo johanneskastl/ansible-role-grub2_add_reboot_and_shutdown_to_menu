@@ -8,11 +8,14 @@
     - 'ansible_os_family != "openSUSE MicroOS"'
     - 'ansible_os_family != "openSUSE Leap Micro"'
 
-- name: 'regenerate grub2 config on openSUSE MicroOS'
+- name: 'regenerate grub2 config on openSUSE MicroOS / openSUSE Leap Micro'
   command:
     cmd: '/usr/sbin/transactional-update grub.cfg'
   notify:
     - 'Reboot'
     - 'Wait for the machine(s) to be ready again'
   when:
-    - 'ansible_os_family == "openSUSE MicroOS"'
+    - '
+      ansible_os_family == "openSUSE MicroOS"
+      or ansible_os_family == "openSUSE Leap Micro"
+      '
