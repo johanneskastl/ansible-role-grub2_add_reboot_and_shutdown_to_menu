@@ -2,7 +2,7 @@
 # grub2_add_reboot_and_shutdown_to_menu/tasks/main.yml
 
 - name: 'create file /etc/grub.d/85_Reboot_Shutdown'
-  template:
+  ansible.builtin.template:
     src: '85_Reboot_Shutdown.j2'
     dest: "{{ grubd_directory }}/{{ grub_script_filename }}"
     owner: 'root'
