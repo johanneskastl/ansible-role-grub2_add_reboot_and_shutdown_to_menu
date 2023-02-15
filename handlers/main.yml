@@ -2,14 +2,14 @@
 # grub2_add_reboot_and_shutdown_to_menu/handlers/main.yml
 
 - name: 'regenerate grub2 config'
-  command:
+  ansible.builtin.command:
     cmd: "grub2-mkconfig -o {{ grub_cfg_path }}"
   when:
     - 'ansible_os_family != "openSUSE MicroOS"'
     - 'ansible_os_family != "openSUSE Leap Micro"'
 
 - name: 'regenerate grub2 config on openSUSE MicroOS / openSUSE Leap Micro'
-  command:
+  ansible.builtin.command:
     cmd: '/usr/sbin/transactional-update grub.cfg'
   notify:
     - 'Reboot'
