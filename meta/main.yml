@@ -38,4 +38,4 @@ galaxy_info:
   galaxy_tags: []
 
 dependencies:
-  - role: 'reboot'
+  - role: 'johanneskastl.reboot'
