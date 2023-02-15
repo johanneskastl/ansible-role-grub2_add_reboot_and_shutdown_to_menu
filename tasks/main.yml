@@ -9,5 +9,5 @@
     group: 'root'
     mode: '0755'
   notify:
-    - 'regenerate grub2 config'
-    - 'regenerate grub2 config on openSUSE MicroOS / openSUSE Leap Micro'
+    - 'Regenerate grub2 config'
+    - 'Regenerate grub2 config on openSUSE MicroOS / openSUSE Leap Micro'
