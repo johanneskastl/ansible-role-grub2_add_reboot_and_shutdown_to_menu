@@ -12,9 +12,9 @@ galaxy_info:
   platforms:
     - name: EL
       versions:
-        - 7
-        - 8
-        - 9
+        - '7'
+        - '8'
+        - '9'
     - name: Debian
       versions:
         - all
@@ -24,10 +24,6 @@ galaxy_info:
     - name: opensuse
       versions:
         - all
-    - name: Rocky
-      versions:
-        - 8
-        - 9
     - name: SLES
       versions:
         - all
