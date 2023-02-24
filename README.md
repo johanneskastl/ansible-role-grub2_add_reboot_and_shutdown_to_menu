@@ -1,3 +1,5 @@
+![Ansible Lint](https://github.com/johanneskastl/ansible-role-grub2_add_reboot_and_shutdown_to_menu/workflows/Ansible%20Lint/badge.svg)
+
 grub2_add_reboot_and_shutdown_to_menu
 =========
 
